@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="USGS_Earthquake_Catalog.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Earthquakes Between"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="Title"
+                VerticalOptions="CenterAndExpand"/>
+
+            <Label
+                Text="Start Date"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="Title"
+                VerticalOptions="CenterAndExpand"/>
+
+            <Entry x:Name="EnterStartDate"
+                   Placeholder="Enter Start Date"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   Margin="20"
+                   Keyboard="Text"
+                   VerticalOptions="CenterAndExpand"/>
+
+            <Label
+                Text="End Date"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="Title"
+                VerticalOptions="CenterAndExpand"/>
+
+            <Entry x:Name="EnterEndDate"
+                   Placeholder="Enter End Date"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   Margin="20"
+                   Keyboard="Text"
+                   VerticalOptions="CenterAndExpand"/>
+
+            <Label
+                Text="Earthquake size (1-10)"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="Title"
+                VerticalOptions="CenterAndExpand"/>
+
+            <Entry x:Name="EnterEarthquakeSize"
+                   Placeholder="Enter Earthquake Size (1-10)"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   Margin="20"
+                   Keyboard="Numeric"
+                   VerticalOptions="CenterAndExpand"/>
+
+            <Button
+                x:Name="BtnFind"
+                Text="Find"
+                VerticalOptions="CenterAndExpand"
+                FontSize="Medium"
+                Padding="30"               
+                Clicked="BtnFind_Clicked"/>
+
+            <Label
+                x:Name="lblResults"
+                Text="Results..."
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                FontSize="Title"
+                VerticalOptions="CenterAndExpand"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
